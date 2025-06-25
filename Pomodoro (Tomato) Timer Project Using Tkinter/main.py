@@ -111,7 +111,7 @@ check_marks = Label(text="", fg=GREEN, bg=YELLOW)
 check_marks.grid(column=1, row=4)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="D:/PYTHON-PRACTICE/02-PYTHON-BOOTCAMP/28_Tkinter,_Dynamic_Typing_and_the_Pomodoro_GUI_Application/code/002 pomodoro-start/tomato.png")
+tomato_img = PhotoImage(file=r"D:\PYTHON-PRACTICE\02-PYTHON-BOOTCAMP\28_Tkinter,_Dynamic_Typing_and_the_Pomodoro_GUI_Application\code\Python-Projects\Pomodoro (Tomato) Timer Project Using Tkinter\tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=2)
