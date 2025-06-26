@@ -103,7 +103,7 @@ window.title("Passoword Manager")
 window.config(padx=50, pady=50)          
 
 canvas = Canvas(width=200, height=200)        
-logo_img = PhotoImage(file="D:/PYTHON-PRACTICE/02-PYTHON-BOOTCAMP/29 - Building a Password Manager GUI App with Tkinter/Coding Exercise/logo.png")           
+logo_img = PhotoImage(file="D:/PYTHON-PRACTICE/02-PYTHON-BOOTCAMP/29 - Building a Password Manager GUI App with Tkinter/Coding Exercise/Python-Projects/Tkinter GUI Application of Password Manager with Advnace Features/logo.png")           
 
 # canvas.create_image(image=logo_img)                
 canvas.create_image(100, 100, image=logo_img)        
