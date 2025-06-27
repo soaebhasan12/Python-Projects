@@ -4,31 +4,6 @@ from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
 
-# Challenge-01 : Working with images and Setting up the Canvas.
-
-# Challenge-02: Use grid() and columnspan to Complete the User Interface (UI).
-
-# Challenge-03: Challenge Data to File.
-        # 1. create a function called() save().
-        # 2. Write to the data inside the entries to a data.txt file when the Add button is clicked.
-        # 3. Each website, emailand password combination should be on a new line inside the file.
-        # 4. All fields need to be cleared after Add button is pressed
-
-# Lecture 006:  Dialog Boxes and Pop-Ups in Tkinter.
-# Challenge-04: Do not save thedata and show the pop up if the website or password fields were left empty.
-
-# Lecture 007: Generate a Password & Copy it to the Clipboard.
-# Challenge-04: Change the existing for loops to use Python List Comprehension instead.
-              # Remember to combine the results so that you can shuffle them to create a password.
-
-
-
-
-
-
-
-
-
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 def generate_password():
@@ -36,35 +11,18 @@ def generate_password():
         numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
         symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-        # nr_letters = random.randint(8, 10)
-        # nr_symbols = random.randint(2, 4)
-        # nr_numbers = random.randint(2, 4)
-
         password_list = []
 
-        # for char in range(nr_letters):
-        #   password_list.append(random.choice(letters))
         password_letters = [choice(letters) for _ in range(randint(8, 10))]
 
-
-        # for char in range(nr_symbols):
-        #   password_list += random.choice(symbols)
         password_numbers = [choice(symbols) for _ in range(randint(2, 4))]
 
-
-        # for char in range(nr_numbers):
-        #   password_list += random.choice(numbers)
         password_numbers = [choice(numbers) for _ in range(randint(2, 4))]
-
 
         password_list = password_letters + password_numbers + password_numbers
         shuffle(password_list)
 
         password = "".join(password_list)
-
-        # password = ""
-        # for char in password_list:
-        #   password += char
 
         password_entry.insert(0, password)
 
@@ -103,7 +61,7 @@ window.title("Passoword Manager")
 window.config(padx=50, pady=50)          
 
 canvas = Canvas(width=200, height=200)        
-logo_img = PhotoImage(file="D:/PYTHON-PRACTICE/02-PYTHON-BOOTCAMP/29 - Building a Password Manager GUI App with Tkinter/Coding Exercise/Python-Projects/Tkinter GUI Application of Password Manager with Advnace Features/logo.png")           
+logo_img = PhotoImage(file="D:/PYTHON-PRACTICE/02-PYTHON-BOOTCAMP/29 - Building a Password Manager GUI App with Tkinter/Coding Exercise/Python-Projects/Tkinter GUI Application of Password Manager/logo.png")           
 
 # canvas.create_image(image=logo_img)                
 canvas.create_image(100, 100, image=logo_img)        
