@@ -1,6 +1,6 @@
 # Pixela Habit Tracker
 
-![Pixela Example Graph](https://pixe.la/v1/users/YOUR_USERNAME/graphs/YOUR_GRAPH_ID) *(example image - replace with your actual graph URL)*
+![Pixela Example Graph](https://pixe.la/v1/users/shoaib27/graphs/shoaib4.html)
 
 A Python script to track habits using the Pixela API, featuring create/update/delete functionality with visual progress tracking.
 
