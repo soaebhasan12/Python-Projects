@@ -1,29 +1,50 @@
-## 100 Movies that You Must Watch
+# Day 45: Web Scraping with Python
 
-# Objective
+## 📋 Overview
+This repository contains my Day 45 work from #100DaysOfCode, focusing on web scraping techniques using Python's BeautifulSoup and requests libraries.
 
-Scrape the top 100 movies of all time from a website. Generate a text file called `movies.txt` that lists the movie titles in ascending order (starting from 1). 
-The result should look something like this:
+## 🎯 Projects
 
-```
-1) The Godfather
-2) The Empire Strikes Back
-3) The Dark Knight
-4) The Shawshank Redemption
-... and so on
-```
-The central idea behind this project is to be able to use BeautifulSoup to obtain some data - like movie titles - from a website like Empire's (or from, say Timeout or Stacker that have curated similar lists). 
+### 1. Hacker News Scraper
+Scrapes the top stories from Hacker News (news.ycombinator.com) and identifies the article with the most upvotes.
 
-### ⚠️ Important: Use the Internet Archive's URL
+**Features:**
+- Extracts article titles, links, and upvote counts
+- Identifies the highest-voted story
+- Implements rate limiting to respect `robots.txt`
 
-Since websites change very frequently, **use this link** 
-```
-URL = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/"
-```
-from the Internet Archive's Wayback machine. That way your work will match the solution video.
+### 2. Top 100 Movies Scraper
+Scrapes Empire Magazine's "100 Greatest Movies" list and saves them in proper ranked order.
 
-(Do *not* use https://www.empireonline.com/movies/features/best-movies-2/ which I've used in the screen recording)
+**Features:**
+- Parses movie titles from the webpage
+- Reverses the order (from #1 to #100)
+- Saves results to `movies.txt`
 
-# Solution
+## ⚙️ Setup
 
-You can find the code from my walkthrough and solution as a downloadable .zip file in the course resources for this lesson. 
+### Prerequisites
+- Python 3.6+
+- pip package manager
+
+### Installation
+pip install beautifulsoup4 requests
+
+
+
+
+
+## ⚠️ Ethical Considerations
+1. Always check the website's `robots.txt` (e.g., `website.com/robots.txt`)
+2. Add delays between requests (`time.sleep(30)`)
+3. Respect copyright and terms of service
+4. Never scrape personal or sensitive data
+5. Prefer official APIs when available
+
+## 📚 Resources
+- [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [Requests Documentation](https://docs.python-requests.org/)
+- [Web Scraping Best Practices](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01)
+
+## 📝 License
+This project is for educational purposes only.
